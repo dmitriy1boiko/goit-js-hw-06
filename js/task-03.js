@@ -24,8 +24,8 @@ const list = document.querySelector(".gallery");
 const elementOfList = images
 .map((image) => `<li>
 <img class="list__img" src = "${image.url}" alt = "${image.alt}" width = 370 />
-</li>`);
+</li>`).join('');
 
 
-console.log(list.insertAdjacentHTML("beforeend", elementOfList));
+list.insertAdjacentHTML("beforeend", elementOfList);
 

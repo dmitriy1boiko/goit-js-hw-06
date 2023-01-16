@@ -18,6 +18,6 @@ const {
 if (email.value === "" || password.value === "") {
   return alert("Please fill in all the fields!");
 }
-console.log(`Login: ${email.value}, Password: ${password.value}`);
+console.log(`{Login: ${email.value}, Password: ${password.value}}`);
   event.currentTarget.reset();
 }
